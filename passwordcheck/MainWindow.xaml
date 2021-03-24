@@ -1,0 +1,38 @@
+﻿<Window x:Class="passwordcheck.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:passwordcheck"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="491.689" Width="912.807">
+    <Grid Margin="0,-24,2,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tbPass1" HorizontalAlignment="Left" Height="34" Margin="55,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="lblPass" Content="Введите пароль" HorizontalAlignment="Left" Height="27" Margin="55,72,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Height="30" Margin="80,143,0,0" VerticalAlignment="Top" Width="83" Click="btn1_Click"/>
+        <Button x:Name="btnEd1" Content="Edit" HorizontalAlignment="Left" Height="32" Margin="74,408,0,0" VerticalAlignment="Top" Width="89" IsEnabledChanged="btnEd1_IsEnabledChanged" Click="btnEd1_Click"/>
+        <Button x:Name="btnAdd1" Content="AddStr" HorizontalAlignment="Left" Height="32" Margin="208,408,0,0" VerticalAlignment="Top" Width="89" Click="btnAdd1_Click"/>
+        <Button x:Name="btMv1" Content="Move" HorizontalAlignment="Left" Height="32" Margin="338,408,0,0" VerticalAlignment="Top" Width="89" Click="btMv1_Click"/>
+        <Label x:Name="lblDs" Content="Дни недели" HorizontalAlignment="Left" Margin="74,203,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="lblStr" Content="Введите&#xD;&#xA; новую строку" HorizontalAlignment="Left" Margin="194,334,0,0" VerticalAlignment="Top" Width="120" Height="41"/>
+        <Label x:Name="lblDt" Content="Перенесенные&#xD;&#xA;данные" HorizontalAlignment="Left" Margin="338,203,0,0" VerticalAlignment="Top" Width="95" Height="41"/>
+        <ListBox x:Name="lbDay" HorizontalAlignment="Left" Height="105" Margin="55,303,0,0" VerticalAlignment="Top" Width="113" SelectionChanged="ListBox_SelectionChanged">
+            <ListBoxItem Content="Понедельник"/>
+            <ListBoxItem Content="Вторник"/>
+            <ListBoxItem Content="Среда"/>
+            <ListBoxItem Content="Четверг"/>
+            <ListBoxItem Content="Пятница"/>
+        </ListBox>
+        <TextBox x:Name="tbStr" HorizontalAlignment="Left" Height="23" Margin="194,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblHello" Content="Здравствуйте! Срок сдачи работы" HorizontalAlignment="Left" Margin="237,35,0,0" VerticalAlignment="Top" Width="196"/>
+        <DatePicker x:Name="dp1" HorizontalAlignment="Left" Height="27" Margin="562,72,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button x:Name="btnCH" Content="Change" HorizontalAlignment="Left" Height="27" Margin="728,72,0,0" VerticalAlignment="Top" Width="66" Click="btnCH_Click"/>
+        <TextBox x:Name="tbMove" HorizontalAlignment="Left" Height="154" Margin="338,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" TextChanged="tbMove_TextChanged" IsEnabled="False"/>
+        <Label x:Name="lblDate" Content="" HorizontalAlignment="Left" Height="26" Margin="462,35,0,0" VerticalAlignment="Top" Width="135"/>
+
+    </Grid>
+</Window>
